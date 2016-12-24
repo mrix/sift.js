@@ -481,9 +481,9 @@
         validators.push(createValidator(comparable(a), OPERATORS[key]));
       } else {
 
-        if (key.charCodeAt(0) === 36) {
-          throw new Error('Unknown operation ' + key);
-        }
+//         if (key.charCodeAt(0) === 36) {
+//           throw new Error('Unknown operation ' + key);
+//         }
 
         validators.push(createNestedValidator(key.split('.'), parse(a)));
       }
